@@ -1,0 +1,42 @@
+import math
+
+silnie = [math.factorial(x) for x in range(1,21)]
+
+print("\n to sa silnie", silnie)
+
+potegie = [math.pow(math.e, x) for x in range(1,21)]
+
+print("\n to sa potegi liczby e", potegie)
+
+liczby14 = [x for x in range(1,15)]
+
+print("\n to sa liczby do 1 do 14", liczby14)
+
+
+
+
+nazwiska=["nazwisko","nazwisko1", "nazwisko22","nazwisko333"]
+
+litery=[len(x) for x in nazwiska]
+
+print("\n", nazwiska)
+print("\n to liczba liter nazwisk", litery)
+
+
+mylist1=[1,2,3,4,5,6,7,8,9,10]
+mylist2=[10,20,30,40,50,60,70,80,90,100]
+
+print("\n to jest zle dodanie list", mylist1 + mylist2)
+
+mylist3=[x+mylist2[x-1] for x in mylist1]
+
+print("\n dobrze 1 ", mylist3)
+
+mylist4 = []
+for x1 in range (0, len (mylist1)):
+    mylist4.append( mylist1[x1] + mylist2[x1])
+print("\n dobrze 2 ", mylist4)
+
+mylist5 = [mylist1[x2] + mylist2[x2] for x2 in range(0, len(mylist1))]
+print("\n dobrze 3 ", mylist5)
+
